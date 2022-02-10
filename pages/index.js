@@ -21,6 +21,27 @@ export default function Home() {
   return (
     <div className={styles.mainContent}>
       <section className={`${styles.header} home`}>
+        <nav className={styles.navbar}>
+          <div className={styles.logoContainer}>
+            <Image src='/images/bored-ape.png' width={70} height={70} />
+            <span className={styles.logoName}>escAPE</span>
+          </div>
+          <div>
+            <Link to="home" smooth={true} className={styles.navlink}>
+              Home
+            </Link>
+            <Link to='about' smooth={true} className={styles.navlink}>
+              About
+            </Link>
+            <Link to="roadmap" smooth={true} className={styles.navlink}>
+              Roadmap
+            </Link>
+            <Link to="contact" smooth={true} className={styles.navlink}>
+              Contact
+            </Link>
+          </div>
+          <a className={styles.connectWalletBtn}>CONNECT WALLET</a>
+        </nav>
         <div className={styles.headerCaption}>
           <p className={styles.caption}>DISCOVER</p>
           <p className={styles.caption}>THE BEST ARTS NFTS</p>
